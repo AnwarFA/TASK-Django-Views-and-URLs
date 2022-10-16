@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <body>
+            
+        
+            <h1>Welcome To The Shop!</h1>
+            <h2>The Products</h2>
+            {% for product in products %}
+            <div>
+                <a href="{% url 'product_detail' product_id=1 %}">
+                    <h3>{{products.name}}</h3>
+                </a>
+                <h4>{{products.price}}</h4>
+
+            </div>
+            {% endfor %}
+            
+        </body>
+    </head>
+</html>
